@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Gallery</title>
+<!-- make sure we have cross device scaling of content standard
+	so as not get the "shrunken text" on mobile
+	      -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="css/mobile.css" type="text/css" rel="stylesheet" 
+media="screen and (min-width:1px) and (max-width:500px)"   />
+
+<link href="css/tablet.css" type="text/css" rel="stylesheet"
+media="screen and (min-width:501px) and (max-width:700px)"
+ />
+
+<link href="css/large.css" type="text/css" rel="stylesheet" 
+media="screen and (min-width:900px) and (max-width:2048px)"
+/>
+
+<link href="css/12-column-grid-class-example.css" rel="stylesheet" type="text/css" />
+ 
+<link href="css/print.css" rel="stylesheet" type="text/css" media="print" />
+
+
+<!-- <script src="javascript/objects.js" type="text/javascript"> </script> -->
+
+<style>
+	
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"> </script>
+
+<script src="javascript/artData.js"></script>
+</head>
+<body> 
+<script>
+	$("document").ready( function(){
+	//create event bindings on all tab panel li buttons....
+	$('.tab-panels .tabs li').on('click', function() {
+		//find and remove the active class for the unordered list
+		$('.tab-panels .tabs li.active').removeClass('active');
+		//give the one being clicked on the class on active
+		$(this).addClass('active');
+		//find out which panel to show by using the current elements "rel"
+		//attribute and assign it to a variable for later
+		var panelToShow = $(this).attr('rel');
+		//alert(panelToShow);
+		//hide current
+		$('.tab-panels .panel.active').slideUp(300, function(){
+			//find and remove the active class for the unordered list
+			$(this).removeClass('active');
+			//show new panel
+			$('#'+panelToShow).slideDown(300, function(){
+			$(this).addClass('active');
+			});
+		});
+			
+	});
+	
+	
+	});
+
+</script>
+	
+<header>
+	<h1>Gallery</h1> 
+	</header>
+	<nav id="navigation" role="navigation">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="sign-up.html">Sign Up</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+	</nav>
+<div id="mainContent">
+	
+		
+
+	<h1>Gallery</h1>
+	<h2>Three Mediums</h2>
+	<div class="container">
+		<div class="row">
+			<div class="four">
+				<div class="tab-panels">
+					<ul class="tabs">
+						<li rel="oil" class="active">oil</li>
+						<li rel="drawing" class="">drawing</li>
+						<li rel="water-color" class="">water color</li>
+						
+					</ul>	
+						<div id="oil" class="panel active">
+							
+						</div>
+						
+						<div id="drawing" class="panel">
+							
+						</div>
+						
+						<div id="water-color" class="panel">
+							
+						</div>
+					</div>
+			</div><!-- close first column -->
+			<div class="eight">
+				<div class="eight" >
+					<img src="images/artwork/oil/oil_1.jpg" id="placeholder" />
+				</div>			
+			</div><!-- close second column -->
+		</div><!-- close the first row in the grid system -->
+	</div><!-- closing container   -->
+</div><!-- closing mainContent   -->
+
+<footer>
+	<p class="odd">
+		&copy; Copyright  by jason zeringue
+	</p>
+</footer>
+
+</body>
+</html>

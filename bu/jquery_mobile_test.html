@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!--  Social Media open graph protocol -->
+<meta property="og:title" content="UW Htlm5 200 :: Javascript" />
+<meta property="og:description" content="[[*description]]" />
+<meta property="og:url" content="[[++site_url]][[~[[*id]]]]" />
+<meta property="og:image" content="[[*social_image]]" />
+
+<!--   Twitter -->
+<meta name="twitter:site" content="[[++site_url]][[~[[*id]]]]" />
+<meta name="twitter:title" content="[[++site_name]] :: [[*pagetitle]]" />
+<meta name="twitter:description" content="[[*description]]" />
+<meta name="twitter:image" content="[[*social_image]]" />
+
+<!-- NO CRAWING FROM SEARCH ENGINE ROBOTS FOR NOW!!! -->
+<meta name="robots" content="noindex,nofollow" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content="[[*description]]" />
+<meta name="keywords" content="Artists in history, artist years " />
+
+<link rel="icon" href="favicon.png" type="image/png" /> 
+
+<!-- MOBILE STYLES -->
+<!-- because we have a reponsive website, that means the users wont have to pinch and zoom, <br>
+so lets disable this feature so our CSS takes care of it -->
+<meta name="viewport" content="width=device-width, maximum-scale-1.0, minimum-scale=1.0, initial-scale=1.0" />
+
+
+<!--    UNCOMMENT THIS SO WE CAN LINK TO THE JQUERY MOBILE FRAMEWORK -->
+<link rel="stylesheet" href="assets/themes/my-custom-theme.min.css" />
+<link rel="stylesheet" href="assets/themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+<title>Artists in History :: Mobile Site</title>
+<!-- <link rel="stylesheet" href="assets/css/mobile-styles.css" /> -->
+<style>
+	body{
+		background-color: pink;
+
+	}
+
+	img{
+		max-width: 100%;
+		max-height: 100%;
+		border-radius: 1em;
+
+	}
+	h2{
+		text-align: center;
+		clear: both;
+		padding: 0em 0em 1.6em 0em;
+		font-size: .9em;
+	}
+	.ui-block-a, .ui-block-b, .ui-block-c{
+	border-radius: 1em;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cfd39c+0,a1a57f+100&1+0,0.22+100 */
+
+	}
+
+</style>
+</head>
+<body>
+<div data-role="page" id="page1"><!--  page 1 div -->
+	<div><!-- header 1 -->
+		<h1>Page 1 Header</h1>
+	</div>
+	<div><!-- content -->
+		<h1>Page 1 content</h1>
+		<p>Page content, this is the main section of page on, insnt this great</p>
+		<!-- site navigation -->
+		<ul data-role="listview">
+			<li><a href="#page2" data-transition="pop" data-direction="reverse">Page 2</a></li>
+			<li><a href="#page3" data-transition="pop">Page 3</a></li>
+			<li><a href="#page4" data-transition="pop">Page 4</a></li>
+			
+		</ul>
+	</div><!-- closing page 1 content -->
+	<div><!-- footer for page one -->
+		<p>&copy;2016 all rights reserved</p>
+	</div><!-- closing footer -->
+</div><!--  page 1 closing div -->
+
+
+
+
+<div data-role="page" id="page2"><!--  page 2 div  -->
+	<div><!-- header 2 -->
+		<h1>Page 2 Header</h1>
+	</div>
+	<div><!-- content -->
+		<h1>Page 2 content</h1>
+		<p>Page content, this is the main section of page on, insnt this great</p>
+	</div><!-- closing page 2 content -->
+	<div><!-- footer for page one -->
+		<p>&copy;2016 all rights reserved</p>
+		<p><a href="#page1" data-transition="pop" data-direction="reverse">Home</a></p>
+	</div><!-- closing footer -->
+</div><!--  page 2 closing div  -->
+
+
+
+
+<div data-role="page" id="page3"><!-- page 3 div   -->
+	<div><!-- header 3 -->
+		<h1>Page 3 Header</h1>
+	</div>
+	<div><!-- content -->
+		<h1>Page 3 content</h1>
+		<p>Page content, this is the main section of page on, insnt this great</p>
+	</div><!-- closing page 3 content -->
+	<div><!-- footer for page one -->
+		<p>&copy;2016 all rights reserved</p>
+		<p><a href="#page1" data-transition="pop">Home</a></p>
+	</div><!-- closing footer -->
+</div><!--  page 3 closing div  -->
+
+
+
+<div data-role="page" id="page4"><!-- page 4 div   -->
+	<div><!-- header 4 -->
+		<h1>Page 4 Header</h1>
+	</div>
+	<div><!-- content -->
+		<h1>Page 4  content</h1>
+		<p>Page content, this is the main section of page on, insnt this great</p>
+	</div><!-- closing page 4 content -->
+	<div><!-- footer for page one -->
+		<p>&copy;2016 all rights reserved</p>
+		<p><a href="#page1" data-transition="pop">Home</a></p>
+	</div><!-- closing footer -->
+</div><!--  page 4 closing div  -->
+
+</body>
+</html>
+
+
